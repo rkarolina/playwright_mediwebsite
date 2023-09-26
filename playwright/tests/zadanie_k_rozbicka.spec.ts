@@ -34,9 +34,9 @@ test("login", async ({ page }) => {
   await page.getByPlaceholder("E-mail, PESEL lub identyfikator").click();
   await page
     .getByPlaceholder("E-mail, PESEL lub identyfikator")
-    .fill("telemeditest@gmail.com");
+    .fill("test@test.com");
   await page.getByPlaceholder("Hasło").click();
-  await page.getByPlaceholder("Hasło").fill("Telemeditest12!");
+  await page.getByPlaceholder("Hasło").fill("tutaj_jakies_haslo123!");
   // Zaloguj się button located using xpath
   await page.locator("xpath=//div[3]/button").click();
   // Expects the URL to contain intro.
